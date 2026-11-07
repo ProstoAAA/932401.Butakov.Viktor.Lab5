@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>О себе — Студент-разработчик</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/Cat.png" alt="Аватар" width="100" height="100">
+            <h1>Бутаков Виктор: студент-разработчик</h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="#skills">Навыки</a>
+            <a href="#projects">Проекты</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <button type="button" id="theme-toggle-btn" style="margin: 10px 0;">Сменить тему</button>
+    </header>
+
+    <main>
+        <section id="skills">
+            <h2>Навыки</h2>
+            <div class="skills-grid" style="padding: 20px;">
+                
+                <div class="skill-tile">
+                    <div class="badge">Top skill</div>
+                    <h3>Python</h3>
+                    <p>Разработка ПО и скриптов</p>
+                </div>
+
+                <div class="skill-tile">
+                    <h3>C++</h3>
+                    <p>Алгоритмы и структуры данных</p>
+                </div>
+
+                <div class="skill-tile">
+                    <h3>SQL</h3>
+                    <p>Управление базами данных</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            
+            <div class="project-controls" style="margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <button type="button" id="add-project-btn">Добавить проект</button>
+                <button type="button" id="delete-project-btn">Удалить последний</button>
+                <button type="button" id="toggle-projects-btn">Свернуть проекты</button>
+            </div>
+
+            <div class="projects-flex-container">
+
+                <article class="project-card">
+                    <img src="images/IM1.png" alt="Python" width="50" height="50" class="project-icon">
+                    <div class="card-info">
+                        <h3>Модель LLM</h3>
+                        <p>Стек: Python, БД, LLM</p>
+                        <button type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/IM2.png" alt="C++" width="50" height="50" class="project-icon">
+                    <div class="card-info">
+                        <h3>Алгоритмический модуль</h3>
+                        <p>Стек: C++, Алгоритмы</p>
+                        <button type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/IM3.png" alt="SQL" width="50" height="50" class="project-icon">
+                    <div class="card-info">
+                        <h3>Аналитическая система</h3>
+                        <p>Стек: SQL, Аналитика</p>
+                        <button type="button">Подробнее</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Скриншоты проектов</h2>
+            <div class="gallery-grid">
+                <figure>
+                    <img src="images/Image1.jpg" alt="Скриншот 1">
+                    <figcaption>Модель LLM</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Image2.jpg" alt="Скриншот 2">
+                    <figcaption>База данных</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Image3.jpg" alt="Скриншот 3">
+                    <figcaption>Telegram-бот</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Image4.jpg" alt="Скриншот 4">
+                    <figcaption>Интерфейс C++</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Связаться со мной</h2>
+            <form>
+                <label for="username">Имя</label>
+                <input type="text" id="username" name="Имя пользователя" placeholder="Введите имя">
+
+                <label for="useremail">Email</label>
+                <input type="email" id="useremail" name="Email пользователя" placeholder="Введите email">
+
+                <label for="usermessage">Сообщение</label>
+                <textarea id="usermessage" name="Сообщение пользователя" placeholder="Введите сообщение"></textarea>
+
+                <button type="submit" name="action">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Любимые инструменты</h3>
+        <ul>
+            <li>Visual Studio Code</li>
+            <li>PyCharm</li>
+            <li>CLion</li>
+        </ul>
+        <p><a href="https://github.com" target="_blank">Мой профиль на GitHub</a></p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Бутаков Виктор</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
